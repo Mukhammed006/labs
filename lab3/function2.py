@@ -91,7 +91,7 @@ def imdb(arr):
     if arr[j]['imdb'] > 5.5:
         return True
     return False
-prin(imdb(movies))
+print(imdb(movies))
 
 #2
 def sublis(arr):
@@ -120,7 +120,7 @@ def avg(arr):
     lis = []
     for i in range(n):
         str=input(f"name of film number {(i+1)}: ")
-        liss.append(str)
+        lis.append(str)
     count = 0
     for i in lis:
         for j in range(len(arr)):

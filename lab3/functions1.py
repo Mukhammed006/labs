@@ -34,7 +34,7 @@ def filter_prime(some_list):
         if check_prime(i) == True:
             arr.append(i)
     return arr
-list1 = filter_prime(lis)
+list1 = filter_prime(list)
 
 #ex5
 from itertools import permutations
@@ -47,7 +47,7 @@ for x in list1:
 str = "abd fre der"
 def convert(str):
     li = list(str.split(""))
-    prin(*li[::-1])
+    print(*li[::-1])
 convert(str)
 
 #ex7
@@ -102,8 +102,8 @@ def ispalindrom(word):
     if copy == word:
         return True
     return False
-print(ispalindrome("abbad")) # false
-print(ispalindrome("abba")) #true
+print(ispalindrom("abbad")) # false
+print(ispalindrom("abba")) #true
 
 #ex12
 def histogram(arr):
