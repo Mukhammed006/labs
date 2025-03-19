@@ -3,7 +3,7 @@ import pygame
 pygame.init()
 
 screen = pygame.display.set_mode((800,600))
-pygame.display.set_caption('Nurlan_Games')
+pygame.display.set_caption('Games')
 
 ball_position = [400, 300]
 speed = 20
