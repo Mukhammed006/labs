@@ -6,17 +6,17 @@ width = 400
 height = 600
 screen = pygame.display.set_mode((width, height))
 pygame.display.set_caption('Spotify')
-icon = pygame.image.load('spotify.png')
+icon = pygame.image.load('lab7\spotify.png')
 pygame.display.set_icon(icon)
-cover = pygame.image.load('cover.jpeg')
+cover = pygame.image.load('lab7\cover.jpeg')
 new_cover = pygame.transform.scale(cover, (400, 500))
-player = pygame.image.load('player.png')
+player = pygame.image.load('lab7\player.png')
 new_player = pygame.transform.scale(player, (400, 100))
 
 music_sound = [
-    pygame.mixer.Sound('sound/1.mp3'),
-    pygame.mixer.Sound('sound/2.mp3'),
-    pygame.mixer.Sound('sound/3.mp3')
+    pygame.mixer.Sound('lab7/sound/1.mp3'),
+    pygame.mixer.Sound('lab7\sound/2.mp3'),
+    pygame.mixer.Sound('lab7\sound/3.mp3')
 ]
 
 selected_sound_index = 0
