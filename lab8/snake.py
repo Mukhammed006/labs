@@ -180,7 +180,7 @@ def snake_game():
         text_score = font_score.render('Final Score: ' + str(score), True, pygame.Color('red'))
         game_screen.blit(text_score, (screen_width/2 - text_score.get_width()/2, screen_height/2 + text_score.get_height()/2))
         pygame.mixer.init()
-        game_over_sound = pygame.mixer.Sound('data/gameover.wav')
+        game_over_sound = pygame.mixer.Sound(r'C:\Users\Mukha\Desktop\PP2_vs code\lab8\data\gameover.wav')
 
     pygame.display.flip()
     game_over_sound.play()

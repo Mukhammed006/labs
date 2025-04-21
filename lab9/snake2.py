@@ -86,6 +86,7 @@ def snake_game():
     # set initial food position and weight
     food_x, food_y, food_weight = generate_food(snake_list)
     food_pos = [food_x, food_y]
+    food_timer = time.time()
     
     # set initial score and level
     score = 0
@@ -139,7 +140,13 @@ def snake_game():
             # increase snake length
             snake_length += 1
             score_sound.play()
+            food_timer = time.time() 
         
+        if time.time() - food_timer >= 7:
+            food_x, food_y, food_weight = generate_food(snake_list)
+            food_pos = [food_x, food_y]
+            food_timer = time.time()
+
         # update snake list with new position
         snake_head = [snake_x, snake_y]
         snake_list.append(snake_head)
